@@ -15,6 +15,8 @@ public class ProyekPBO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new koneksi().setVisible(true);
+        new MenuBar().setVisible(true);
     }
     
 }
