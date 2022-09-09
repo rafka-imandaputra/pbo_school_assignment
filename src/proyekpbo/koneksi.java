@@ -20,7 +20,7 @@ public class koneksi extends javax.swing.JFrame {
         initComponents();
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            DriverManager.getConnection("jdbc:mysql://localhost/dbjersey","root","");
+            DriverManager.getConnection("jdbc:mysql://localhost/db_jual","root","");
             JOptionPane.showMessageDialog(rootPane, "Koneksi berhasil");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, "Koneksi gagal");
