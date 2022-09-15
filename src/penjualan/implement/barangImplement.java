@@ -14,7 +14,7 @@ import penjualan.interfc.barangInterfc;
  *
  * @author User
  */
-public class barangImplement {
+public class barangImplement implements barangInterfc {
     
     public barang insert(barang o) throws SQLException { 
         PreparedStatement st = koneksi.getConnection().prepareStatement 

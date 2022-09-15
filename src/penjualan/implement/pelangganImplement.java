@@ -36,13 +36,13 @@ public class pelangganImplement implements pelangganinterfc{
     }
         
     public void delete(String id_pelanggan) throws SQLException {
-        PreparedStatement st = koneksl.getConnection().prepareStatement
+        PreparedStatement st = koneksi.getConnection().prepareStatement
         ("delete from pelanggan where id_pelanggan=?");
         st.setString(1, id_pelanggan);
         st.executeUpdate(); 
      }
     
-    public List<pelanggan> getAll() throws SOLException{
+    public List<pelanggan> getAll() throws SQLException{
         Statement st = koneksi.getConnection().createStatement();
         ResultSet rs = st.executeQuery("select * from pelanggan");
         List<pelanggan>list = new ArrayList<pelanggan>(); 
